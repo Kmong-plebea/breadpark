@@ -8,8 +8,8 @@ import { useCompanyStore } from "../store/company";
 const companyStore = useCompanyStore();
 const map = ref();
 const mapOptions = {
-    latitude: 37.6022808, // 지도 중앙 위도
-    longitude: 127.0237139, // 지도 중앙 경도
+    latitude: 37.6042255, // 지도 중앙 위도
+    longitude: 127.0251861, // 지도 중앙 경도
     zoom: 13,
     zoomControl: false,
     zoomControlOptions: { position: "TOP_RIGHT" },

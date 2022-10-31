@@ -50,6 +50,10 @@ const select = (index: number) => {
     @media (max-width: 580px) {
         height: 127px;
         margin-bottom: 20px;
+
+        img {
+            height: 100% !important;
+        }
     }
 
     img {
@@ -57,8 +61,6 @@ const select = (index: number) => {
         position: absolute;
         left: 50%;
         top: 50%;
-
-        height: 100%;
     }
 
     &_textbox {

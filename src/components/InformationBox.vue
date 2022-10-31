@@ -3,17 +3,6 @@ import { computed, ref } from 'vue';
 import { useCompanyStore } from '../store/company';
 
 const companyStore = useCompanyStore();
-// let props = defineProps<{
-//     data: {
-//         company?: string,
-//         type?: string[],
-//         stuff?: string[],
-//         address?: string,
-//         lat?: number,
-//         lng?: number,
-//         src?: string
-//     }
-// }>();
 let isSelected = ref(false);
 const props = computed(() => {
     const res = companyStore.company;
