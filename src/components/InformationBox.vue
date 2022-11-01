@@ -15,9 +15,9 @@ const props = computed(() => {
 
 let img = ref();
 if (props.value?.src) {
-    img = ref(props.value?.src);
+    img.value = new URL(props.value?.src).href;
 } else {
-    img = ref('/src/assets/images/dummy company.png');
+    img.value = new URL('../assets/images/dummy company.png', import.meta.url).href;
 }
 
 const exit = () => {

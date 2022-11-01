@@ -3,12 +3,12 @@ import { ref } from 'vue';
 const selected = ref(0);
 const banner = ref([
     {
-        img: '/src/assets/images/dummy banner1.png',
+        img: new URL('../assets/images/dummy banner1.png', import.meta.url).href,
         p: '이런 것도 있었어?',
         h1: '2023 재생원단의 모든 것',
     },
     {
-        img: '/src/assets/images/dummy banner2.png',
+        img: new URL('../assets/images/dummy banner2.png', import.meta.url).href,
         p: '한 눈에 알아보기',
         h1: '브릿지의 업체 매칭이 가장 쉬운 이유',
     },
