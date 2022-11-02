@@ -49,7 +49,6 @@ setInterval(() => {
     width: 85%;
     max-width: 680px;
     height: 170px;
-    border-radius: 20px;
     background-color: #cecece;
 
     overflow: hidden;
@@ -69,7 +68,6 @@ setInterval(() => {
     img {
         transform: translate(-50%, -50%);
         position: absolute;
-        border-radius: 20px;
         left: 50%;
         top: 50%;
 
