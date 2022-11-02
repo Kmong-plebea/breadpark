@@ -61,6 +61,8 @@ setInterval(() => {
 
         img {
             height: 100% !important;
+            width: 386.75px !important; 
+            object-fit: cover;
         }
     }
 
