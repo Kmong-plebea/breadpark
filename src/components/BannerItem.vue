@@ -67,6 +67,7 @@ setInterval(() => {
     img {
         transform: translate(-50%, -50%);
         position: absolute;
+        border-radius: 20px;
         left: 50%;
         top: 50%;
 
