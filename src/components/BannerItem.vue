@@ -16,11 +16,19 @@ const banner = ref([
 const select = (index: number) => {
     selected.value = index;
 }
+
+setInterval(() => {
+    if (selected.value === 0) {
+        selected.value = 1;
+    } else {
+        selected.value = 0;
+    }
+}, 5500);
 </script>
 
 <template>
     <div class="banner">
-        <img :src="banner[selected].img" alt="banner">
+        <img v-for="(i, k) in banner" :key="k" :class="{ banner_change: selected === k }" :src="i.img" alt="banner">
 
         <div class="banner_textbox">
             <p>{{ banner[selected].p }}</p>
@@ -61,6 +69,13 @@ const select = (index: number) => {
         position: absolute;
         left: 50%;
         top: 50%;
+
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    &_change {
+        opacity: 1 !important;
     }
 
     &_textbox {
